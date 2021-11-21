@@ -1,0 +1,100 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIRfilter_LA
+Version: O-2018.06-SP4
+Date   : Sun Nov 21 14:19:21 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: H1[1] (input port clocked by MY_CLK)
+  Endpoint: DOUT_reg[6]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIRfilter_LA       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  H1[1] (in)                                              0.00       0.50 f
+  mult_41/b[1] (IIRfilter_LA_DW_mult_tc_0)                0.00       0.50 f
+  mult_41/U128/ZN (INV_X1)                                0.05       0.55 r
+  mult_41/U176/ZN (NOR2_X1)                               0.04       0.59 f
+  mult_41/U51/CO (HA_X1)                                  0.05       0.65 f
+  mult_41/U49/CO (FA_X1)                                  0.09       0.73 f
+  mult_41/U46/S (FA_X1)                                   0.11       0.84 f
+  mult_41/U161/ZN (AOI222_X1)                             0.13       0.97 r
+  mult_41/U160/ZN (OAI222_X1)                             0.07       1.04 f
+  mult_41/U8/CO (FA_X1)                                   0.10       1.13 f
+  mult_41/U7/CO (FA_X1)                                   0.09       1.22 f
+  mult_41/U6/CO (FA_X1)                                   0.09       1.31 f
+  mult_41/U5/CO (FA_X1)                                   0.09       1.40 f
+  mult_41/U4/CO (FA_X1)                                   0.09       1.49 f
+  mult_41/U3/CO (FA_X1)                                   0.09       1.58 f
+  mult_41/U146/ZN (XNOR2_X1)                              0.05       1.63 r
+  mult_41/U145/Z (XOR2_X1)                                0.07       1.70 r
+  mult_41/U141/Z (XOR2_X1)                                0.07       1.77 r
+  mult_41/product[12] (IIRfilter_LA_DW_mult_tc_0)         0.00       1.77 r
+  sub_32/B[7] (IIRfilter_LA_DW01_sub_0)                   0.00       1.77 r
+  sub_32/U2/ZN (INV_X1)                                   0.03       1.80 f
+  sub_32/U2_6/CO (FA_X1)                                  0.11       1.91 f
+  sub_32/U2_7/S (FA_X1)                                   0.19       2.10 r
+  sub_32/DIFF[7] (IIRfilter_LA_DW01_sub_0)                0.00       2.10 r
+  mult_40/a[7] (IIRfilter_LA_DW_mult_tc_1)                0.00       2.10 r
+  mult_40/U242/ZN (INV_X1)                                0.10       2.20 f
+  mult_40/U372/Z (XOR2_X1)                                0.10       2.30 f
+  mult_40/U369/ZN (OAI22_X1)                              0.07       2.37 r
+  mult_40/U55/CO (HA_X1)                                  0.07       2.44 r
+  mult_40/U51/S (FA_X1)                                   0.11       2.55 f
+  mult_40/U50/S (FA_X1)                                   0.11       2.66 f
+  mult_40/U266/ZN (AOI222_X1)                             0.13       2.79 r
+  mult_40/U265/ZN (OAI222_X1)                             0.07       2.85 f
+  mult_40/U264/ZN (AOI222_X1)                             0.11       2.97 r
+  mult_40/U263/ZN (OAI222_X1)                             0.07       3.03 f
+  mult_40/U262/ZN (AOI222_X1)                             0.11       3.15 r
+  mult_40/U261/ZN (OAI222_X1)                             0.07       3.21 f
+  mult_40/U8/CO (FA_X1)                                   0.10       3.31 f
+  mult_40/U7/CO (FA_X1)                                   0.09       3.40 f
+  mult_40/U6/CO (FA_X1)                                   0.09       3.49 f
+  mult_40/U5/CO (FA_X1)                                   0.09       3.58 f
+  mult_40/U4/CO (FA_X1)                                   0.09       3.67 f
+  mult_40/U3/S (FA_X1)                                    0.13       3.80 r
+  mult_40/product[19] (IIRfilter_LA_DW_mult_tc_1)         0.00       3.80 r
+  sub_0_root_sub_0_root_add_37/B[5] (IIRfilter_LA_DW01_sub_1)
+                                                          0.00       3.80 r
+  sub_0_root_sub_0_root_add_37/U8/ZN (INV_X1)             0.02       3.82 f
+  sub_0_root_sub_0_root_add_37/U2_5/CO (FA_X1)            0.10       3.92 f
+  sub_0_root_sub_0_root_add_37/U2_6/S (FA_X1)             0.13       4.06 r
+  sub_0_root_sub_0_root_add_37/DIFF[6] (IIRfilter_LA_DW01_sub_1)
+                                                          0.00       4.06 r
+  U92/ZN (NAND2_X1)                                       0.03       4.08 f
+  U91/ZN (OAI21_X1)                                       0.03       4.11 r
+  DOUT_reg[6]/D (DFFR_X1)                                 0.01       4.12 r
+  data arrival time                                                  4.12
+
+  clock MY_CLK (rise edge)                               10.56      10.56
+  clock network delay (ideal)                             0.00      10.56
+  clock uncertainty                                      -0.07      10.49
+  DOUT_reg[6]/CK (DFFR_X1)                                0.00      10.49 r
+  library setup time                                     -0.04      10.45
+  data required time                                                10.45
+  --------------------------------------------------------------------------
+  data required time                                                10.45
+  data arrival time                                                 -4.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.33
+
+
+1

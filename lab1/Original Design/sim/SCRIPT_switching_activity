@@ -1,0 +1,20 @@
+vlib work
+
+#compiling the required files
+vcom -93 -work ./work ../src/constants.vhd
+vcom -93 -work ./work ../tb/clk_gen.vhd
+vcom -93 -work ./work ../tb/data_maker_new.vhd
+vcom -93 -work ./work ../tb/data_sink.vhd
+vlog -work ./work ../netlist/IIRfilter.v
+vlog -work ./work ../tb/tb_fir.v
+
+######THIS INSTRUCTION HAS TO BE DONE ONLY ONCE. COMMENT AFTER DOING IT
+vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /tb_fir/IIR=../netlist/IIRfilter.sdf work.tb_fir
+
+#VCD FILE
+vcd file ../vcd/IIRfilter_syn.vcd
+vcd add /tb_fir/IIR/*
+
+add wave *
+
+run 4 us

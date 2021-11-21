@@ -1,0 +1,99 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIRfilter
+Version: O-2018.06-SP4
+Date   : Sun Nov 21 12:08:09 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: H1[0] (input port clocked by MY_CLK)
+  Endpoint: DOUT_reg[6]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIRfilter          5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  H1[0] (in)                                              0.00       0.50 f
+  mult_33/b[0] (IIRfilter_DW_mult_tc_1)                   0.00       0.50 f
+  mult_33/U164/ZN (AND2_X1)                               0.04       0.54 f
+  mult_33/U49/CO (FA_X1)                                  0.10       0.64 f
+  mult_33/U46/S (FA_X1)                                   0.11       0.75 f
+  mult_33/U205/ZN (AOI222_X4)                             0.15       0.90 r
+  mult_33/U250/ZN (OAI222_X1)                             0.05       0.95 f
+  mult_33/U231/ZN (NAND2_X1)                              0.04       0.99 r
+  mult_33/U233/ZN (NAND3_X1)                              0.04       1.03 f
+  mult_33/U224/ZN (NAND2_X1)                              0.04       1.07 r
+  mult_33/U149/ZN (NAND3_X1)                              0.04       1.10 f
+  mult_33/U227/ZN (NAND2_X1)                              0.04       1.14 r
+  mult_33/U229/ZN (NAND3_X1)                              0.04       1.18 f
+  mult_33/U183/ZN (NAND2_X1)                              0.04       1.22 r
+  mult_33/U179/ZN (NAND3_X1)                              0.04       1.25 f
+  mult_33/U215/ZN (NAND2_X1)                              0.03       1.29 r
+  mult_33/U218/ZN (NAND3_X1)                              0.04       1.33 f
+  mult_33/U208/ZN (NAND2_X1)                              0.03       1.36 r
+  mult_33/U211/ZN (NAND3_X1)                              0.03       1.39 f
+  mult_33/U238/ZN (XNOR2_X1)                              0.05       1.44 r
+  mult_33/U194/ZN (XNOR2_X1)                              0.06       1.50 r
+  mult_33/U193/ZN (XNOR2_X1)                              0.06       1.56 r
+  mult_33/product[12] (IIRfilter_DW_mult_tc_1)            0.00       1.56 r
+  sub_28/B[7] (IIRfilter_DW01_sub_0)                      0.00       1.56 r
+  sub_28/U44/ZN (INV_X1)                                  0.03       1.59 f
+  sub_28/U2_6/S (FA_X1)                                   0.15       1.73 r
+  sub_28/DIFF[6] (IIRfilter_DW01_sub_0)                   0.00       1.73 r
+  mult_31/a[6] (IIRfilter_DW_mult_tc_0)                   0.00       1.73 r
+  mult_31/U143/ZN (AND2_X1)                               0.06       1.79 r
+  mult_31/U156/ZN (XNOR2_X1)                              0.07       1.86 r
+  mult_31/U266/ZN (XNOR2_X1)                              0.06       1.92 r
+  mult_31/U265/ZN (XNOR2_X1)                              0.06       1.99 r
+  mult_31/U240/ZN (XNOR2_X1)                              0.05       2.04 f
+  mult_31/U234/ZN (NAND2_X1)                              0.04       2.08 r
+  mult_31/U237/ZN (NAND3_X1)                              0.04       2.12 f
+  mult_31/U190/ZN (NAND2_X1)                              0.04       2.16 r
+  mult_31/U189/ZN (NAND3_X1)                              0.04       2.20 f
+  mult_31/U247/ZN (NAND2_X1)                              0.04       2.23 r
+  mult_31/U248/ZN (NAND3_X1)                              0.04       2.27 f
+  mult_31/U252/ZN (NAND2_X1)                              0.03       2.30 r
+  mult_31/U142/ZN (NAND3_X1)                              0.04       2.34 f
+  mult_31/U228/ZN (NAND2_X1)                              0.03       2.37 r
+  mult_31/U230/ZN (NAND3_X1)                              0.03       2.40 f
+  mult_31/U285/ZN (XNOR2_X1)                              0.06       2.46 f
+  mult_31/U218/ZN (XNOR2_X1)                              0.06       2.52 f
+  mult_31/U217/ZN (XNOR2_X1)                              0.06       2.57 f
+  mult_31/product[12] (IIRfilter_DW_mult_tc_0)            0.00       2.57 f
+  add_32/A[6] (IIRfilter_DW01_add_0)                      0.00       2.57 f
+  add_32/U1_6/S (FA_X1)                                   0.14       2.71 r
+  add_32/SUM[6] (IIRfilter_DW01_add_0)                    0.00       2.71 r
+  U71/ZN (NAND2_X1)                                       0.03       2.74 f
+  U69/ZN (NAND2_X1)                                       0.02       2.76 r
+  DOUT_reg[6]/D (DFFR_X1)                                 0.01       2.77 r
+  data arrival time                                                  2.77
+
+  clock MY_CLK (rise edge)                                2.53       2.53
+  clock network delay (ideal)                             0.00       2.53
+  clock uncertainty                                      -0.07       2.46
+  DOUT_reg[6]/CK (DFFR_X1)                                0.00       2.46 r
+  library setup time                                     -0.03       2.43
+  data required time                                                 2.43
+  --------------------------------------------------------------------------
+  data required time                                                 2.43
+  data arrival time                                                 -2.77
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.34
+
+
+1

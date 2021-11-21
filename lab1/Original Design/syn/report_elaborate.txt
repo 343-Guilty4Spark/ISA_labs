@@ -1,0 +1,28 @@
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/gtech.db'
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../src/IIRfilter.vhd:19: Physical types are not supported. Presto ignores it. (ELAB-918)
+Warning:  ../src/IIRfilter.vhd:20: Physical types are not supported. Presto ignores it. (ELAB-918)
+Warning:  ../src/IIRfilter.vhd:21: Physical types are not supported. Presto ignores it. (ELAB-918)
+Warning:  ../src/IIRfilter.vhd:28: Signal assignment delays are not supported for synthesis. They are ignored. (ELAB-924)
+Warning:  ../src/IIRfilter.vhd:31: Signal assignment delays are not supported for synthesis. They are ignored. (ELAB-924)
+Warning:  ../src/IIRfilter.vhd:32: Signal assignment delays are not supported for synthesis. They are ignored. (ELAB-924)
+Warning:  ../src/IIRfilter.vhd:33: Signal assignment delays are not supported for synthesis. They are ignored. (ELAB-924)
+Warning:  ../src/IIRfilter.vhd:34: Signal assignment delays are not supported for synthesis. They are ignored. (ELAB-924)
+
+Inferred memory devices in process
+	in routine IIRfilter line 36 in file
+		'../src/IIRfilter.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      VOUT_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    w_reg_out_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      DOUT_reg       | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'IIRfilter'.
+1
