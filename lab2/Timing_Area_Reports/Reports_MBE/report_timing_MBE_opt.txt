@@ -1,0 +1,68 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Sun Dec 19 19:25:04 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: MY_CLK_r_REG189_S2
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: MY_CLK_r_REG177_S3
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  MY_CLK_r_REG189_S2/CK (DFF_X1)                          0.00       0.00 r
+  MY_CLK_r_REG189_S2/QN (DFF_X1)                          0.07       0.07 f
+  U5161/Z (XOR2_X1)                                       0.08       0.14 f
+  U5308/ZN (XNOR2_X1)                                     0.06       0.21 f
+  add_1_root_I2/MBE1/f_add/add_25_2/B[29] (FPmul_DW01_add_4)
+                                                          0.00       0.21 f
+  add_1_root_I2/MBE1/f_add/add_25_2/U626/ZN (NOR2_X2)     0.07       0.27 r
+  add_1_root_I2/MBE1/f_add/add_25_2/U481/ZN (OAI21_X1)
+                                                          0.04       0.32 f
+  add_1_root_I2/MBE1/f_add/add_25_2/U573/ZN (INV_X1)      0.03       0.35 r
+  add_1_root_I2/MBE1/f_add/add_25_2/U572/ZN (OAI21_X1)
+                                                          0.03       0.38 f
+  add_1_root_I2/MBE1/f_add/add_25_2/U571/ZN (AOI21_X1)
+                                                          0.06       0.43 r
+  add_1_root_I2/MBE1/f_add/add_25_2/U570/ZN (OAI21_X1)
+                                                          0.03       0.47 f
+  add_1_root_I2/MBE1/f_add/add_25_2/U607/ZN (AOI21_X1)
+                                                          0.06       0.52 r
+  add_1_root_I2/MBE1/f_add/add_25_2/U629/ZN (XNOR2_X1)
+                                                          0.06       0.58 r
+  add_1_root_I2/MBE1/f_add/add_25_2/SUM[31] (FPmul_DW01_add_4)
+                                                          0.00       0.58 r
+  MY_CLK_r_REG177_S3/D (DFF_X1)                           0.01       0.59 r
+  data arrival time                                                  0.59
+
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  MY_CLK_r_REG177_S3/CK (DFF_X1)                          0.00       0.00 r
+  library setup time                                     -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.62
+
+
+1
